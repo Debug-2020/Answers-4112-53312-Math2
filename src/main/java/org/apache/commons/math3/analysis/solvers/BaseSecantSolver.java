@@ -54,10 +54,10 @@ public abstract class BaseSecantSolver
     protected static final double DEFAULT_ABSOLUTE_ACCURACY = 1e-6;
 
     /** The kinds of solutions that the algorithm may accept. */
-    private AllowedSolution allowed;
+    transient private AllowedSolution allowed;
 
     /** The <em>Secant</em>-based root-finding method to use. */
-    private final Method method;
+    transient private final Method method;
 
     /**
      * Construct a solver.

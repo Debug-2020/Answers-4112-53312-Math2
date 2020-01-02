@@ -39,7 +39,7 @@ public class TransformerMap implements NumberTransformer, Serializable {
     /**
      * A default Number Transformer for Numbers and numeric Strings.
      */
-    private NumberTransformer defaultTransformer = null;
+    transient private NumberTransformer defaultTransformer = null;
 
     /**
      * The internal Map.

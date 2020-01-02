@@ -50,13 +50,13 @@ public abstract class BaseAbstractUnivariateSolver<FUNC extends UnivariateFuncti
     /** Evaluations counter. */
     private final Incrementor evaluations = new Incrementor();
     /** Lower end of search interval. */
-    private double searchMin;
+    transient private double searchMin;
     /** Higher end of search interval. */
-    private double searchMax;
+    transient private double searchMax;
     /** Initial guess. */
-    private double searchStart;
+    transient private double searchStart;
     /** Function to solve. */
-    private FUNC function;
+    transient private FUNC function;
 
     /**
      * Construct a solver with given absolute accuracy.

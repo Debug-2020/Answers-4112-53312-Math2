@@ -29,7 +29,7 @@ public abstract class AbstractPolynomialSolver
     extends BaseAbstractUnivariateSolver<PolynomialFunction>
     implements PolynomialSolver {
     /** Function. */
-    private PolynomialFunction polynomialFunction;
+    transient private PolynomialFunction polynomialFunction;
 
     /**
      * Construct a solver with given absolute accuracy.

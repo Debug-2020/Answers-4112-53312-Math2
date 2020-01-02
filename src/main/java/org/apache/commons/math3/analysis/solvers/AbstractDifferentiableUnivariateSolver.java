@@ -34,7 +34,7 @@ public abstract class AbstractDifferentiableUnivariateSolver
     extends BaseAbstractUnivariateSolver<DifferentiableUnivariateFunction>
     implements DifferentiableUnivariateSolver {
     /** Derivative of the function to solve. */
-    private UnivariateFunction functionDerivative;
+    transient private UnivariateFunction functionDerivative;
 
     /**
      * Construct a solver with given absolute accuracy.

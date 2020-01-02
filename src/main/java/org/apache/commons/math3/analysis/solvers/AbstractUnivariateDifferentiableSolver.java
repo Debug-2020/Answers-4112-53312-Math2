@@ -33,7 +33,7 @@ public abstract class AbstractUnivariateDifferentiableSolver
     implements UnivariateDifferentiableSolver {
 
     /** Function to solve. */
-    private UnivariateDifferentiableFunction function;
+    transient private UnivariateDifferentiableFunction function;
 
     /**
      * Construct a solver with given absolute accuracy.
